@@ -1,0 +1,25 @@
+#know-me {
+    background: url(../images/section2bp.jfif) center center / cover no-repeat fixed;
+    color: white;
+    
+}
+#know-me h1 {
+    text-align: center;
+    padding: 30px;
+    font-size: 35px;
+
+}
+#know-me img {
+    width: 500px;
+    height: 500px;
+    border-radius: 50% ;
+    
+}
+.self {
+    display: flex;
+}
+/* .self p {
+
+    font-size: 30px;
+    
+} */
