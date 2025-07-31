@@ -18,8 +18,10 @@
 .self {
     display: flex;
 }
-/* .self p {
 
-    font-size: 30px;
-    
-} */
+@media only screen and (max-width: 768px) {
+    #know-me img {
+        width: 400px;
+        height: 400px;
+    }
+}

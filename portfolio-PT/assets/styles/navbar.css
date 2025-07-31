@@ -8,15 +8,64 @@ header {
     color: black;
     padding: 50px;
 }
+.logo {
+    padding-left: 10px;
+}
 .nav-links {
     display: flex;
     gap: 50px;
     list-style: none;
     
 }
+
+.menu-toggle {
+    display: none;
+}
+
+.menu-btn {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
 .nav-links a {
     text-decoration: none;
     color: black;
     font-size: 20px;
     
+}
+
+@media only screen and (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background: white;
+    position: absolute;
+    top: 72px;
+    right: 0;
+    width: fit-content;
+    padding: 20px ;
+    margin-top: 50px;
+    justify-content: flex-end;
+    z-index: 9999;
+  }
+  .logo {
+    
+    padding-left: 0;
+    margin-left: 0;
+    position: absolute;
+    left: 30px; 
+  }
+  .navbar {
+    position: relative;
+  }
+  .menu-btn {
+     display: flex;
+    margin-left: auto; 
+    z-index: 10000;
+  }
+
+  .menu-toggle:checked ~ .nav-links {
+    display: flex;
+  }
 }
